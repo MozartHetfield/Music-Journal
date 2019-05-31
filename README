@@ -1,4 +1,4 @@
-## Music journal
+# Music journal
 The final project of the course named Android Studio Fundamentals from the Google Digital Workshop organized in the University of Bucharest.
 
 The application represents a journal that keeps the attended concerts of your lifetime, including few details and basic didactic features that helped us undestand better the presented concepts.
@@ -16,17 +16,3 @@ The main priciples and functionalities that were approached are:
 - Custom activity transitions/fonts/themes
 
 Special thanks to our teacher, Magda Miu, who has an unconditionally love to help people understand better Android.
-
-# Project Title
-
-One Paragraph of project description goes here
-
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-### Prerequisites
-
-What things you need to install the software and how to install them
-
-```
