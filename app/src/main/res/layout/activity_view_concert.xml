@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewConcert"
+    android:id="@+id/clickableBackground"
+    android:background="@drawable/view_concert_background"
+    >
+
+    <ImageView
+        android:id="@+id/previewViewConcert"
+        android:layout_width="@dimen/width_size_preview"
+        android:layout_height="@dimen/height_size_preview"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginLeft="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size"
+        android:layout_marginRight="@dimen/margin_size"
+        android:longClickable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/default_pic" />
+
+    <TextView
+        android:id="@+id/singerNameViewConcert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_size"
+        android:layout_marginLeft="@dimen/margin_size"
+        android:layout_marginTop="@dimen/margin_size"
+        android:layout_marginEnd="@dimen/margin_size"
+        android:layout_marginRight="@dimen/margin_size"
+        android:text="@string/guns_n_roses"
+        android:textStyle="bold"
+        android:textColor="@color/midnightblue"
+        android:textSize="@dimen/text_size_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewViewConcert" />
+
+    <TextView
+        android:id="@+id/location_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/midnightblue"
+        android:layout_marginStart="@dimen/date_padding"
+        android:layout_marginLeft="@dimen/date_padding"
+        android:layout_marginTop="@dimen/date_padding"
+        android:layout_marginEnd="@dimen/date_padding"
+        android:layout_marginRight="@dimen/date_padding"
+        android:text="@string/los_angeles_california_usa"
+        android:textSize="@dimen/location_size_preview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/singerNameViewConcert" />
+
+    <TextView
+        android:id="@+id/date_view_concert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/smallest_margin"
+        android:layout_marginLeft="@dimen/smallest_margin"
+        android:layout_marginTop="@dimen/smallest_margin"
+        android:layout_marginEnd="@dimen/smallest_margin"
+        android:layout_marginRight="@dimen/smallest_margin"
+        android:text="@string/_20_12_1985"
+        android:textStyle="italic"
+        android:textColor="@color/midnightblue"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_preview" />
+
+
+    <TextView
+        android:id="@+id/genre_view_concert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/date_padding"
+        android:layout_marginLeft="@dimen/date_padding"
+        android:layout_marginTop="@dimen/date_padding"
+        android:layout_marginEnd="@dimen/date_padding"
+        android:layout_marginRight="@dimen/date_padding"
+        android:text="@string/symphonic"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/uselessSpace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_view_concert" />
+
+    <TextView
+        android:id="@+id/priceViewConcert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/date_padding"
+        android:layout_marginLeft="@dimen/date_padding"
+        android:layout_marginTop="@dimen/date_padding"
+        android:layout_marginEnd="@dimen/date_padding"
+        android:layout_marginRight="@dimen/date_padding"
+        android:text="@string/_9999_ron"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/uselessSpace"
+        app:layout_constraintTop_toBottomOf="@+id/date_view_concert" />
+
+    <TextView
+        android:id="@+id/uselessSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/date_padding"
+        android:layout_marginLeft="@dimen/date_padding"
+        android:layout_marginTop="@dimen/date_padding"
+        android:layout_marginEnd="@dimen/date_padding"
+        android:layout_marginRight="@dimen/date_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_view_concert" />
+
+    <RatingBar
+        android:id="@+id/rating_view_concert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/date_padding"
+        android:layout_marginLeft="@dimen/date_padding"
+        android:layout_marginTop="@dimen/date_padding"
+        android:layout_marginEnd="@dimen/date_padding"
+        android:isIndicator="true"
+        android:focusable="false"
+        android:numStars="5"
+        android:progressTint="@color/gold"
+        android:stepSize="0.5"
+        android:layout_marginRight="@dimen/date_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/uselessSpace" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">20sp</dimen>
+    <dimen name="margin_size">16dp</dimen>
+    <dimen name="progress_bar_size">25dp</dimen>
+    <dimen name="date_padding">8dp</dimen>
+    <dimen name="icon_size">20dp</dimen>
+    <dimen name="icon_padding">8dp</dimen>
+    <dimen name="button_text_size">12sp</dimen>
+    <dimen name="login_text_size">30sp</dimen>
+    <dimen name="preview_pic_width">120dp</dimen>
+    <dimen name="preview_pic_height">100dp</dimen>
+    <dimen name="width_size_preview">240dp</dimen>
+    <dimen name="height_size_preview">200dp</dimen>
+    <dimen name="text_size_preview">30sp</dimen>
+    <dimen name="location_size_preview">20sp</dimen>
+    <dimen name="smallest_margin">4dp</dimen>
+    <dimen name="nav_header_size">176dp</dimen>
+    <dimen name="small_text_size">10sp</dimen>
+</resources>

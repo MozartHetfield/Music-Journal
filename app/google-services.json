@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "350893728695",
+    "firebase_url": "https://com-soare-music-journal.firebaseio.com",
+    "project_id": "com-soare-music-journal",
+    "storage_bucket": "com-soare-music-journal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:350893728695:android:cede55bc8eba4d08",
+        "android_client_info": {
+          "package_name": "com.soare.musicjournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "350893728695-e6hkvjte6pviosnnqpml06dcv1hdaigq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.soare.musicjournal",
+            "certificate_hash": "d3b2145d56b7c94820ae6edf435cd506595e0ef7"
+          }
+        },
+        {
+          "client_id": "350893728695-daic0sspdbdb6a649fjl4ji4f7m4l7hi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB575pm3GFT_vM0kCisjIqyrZcNguEiJ1M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "350893728695-daic0sspdbdb6a649fjl4ji4f7m4l7hi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManageConcert"
+    android:id="@+id/manage_concert_background"
+    android:background="@drawable/view_concert_background"
+    >
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/singerNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:text="@string/singer_name"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/singerNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginEnd="@dimen/margin_size"
+                android:layout_marginRight="@dimen/margin_size"
+                android:drawableStart="@drawable/singer_name"
+                android:drawableLeft="@drawable/singer_name"
+                android:drawablePadding="@dimen/icon_padding"
+                android:hint="@string/example_guns_n_roses"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singerNameTextView" />
+
+            <TextView
+                android:id="@+id/locationTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:text="@string/location"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/singerNameEditText" />
+
+            <EditText
+                android:id="@+id/locationEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginEnd="@dimen/margin_size"
+                android:drawableStart="@drawable/location"
+                android:drawableLeft="@drawable/location"
+                android:drawablePadding="@dimen/icon_padding"
+                android:ems="10"
+                android:hint="@string/example_los_angeles_california"
+                android:inputType="textPersonName"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
+
+            <TextView
+                android:id="@+id/genreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginEnd="@dimen/margin_size"
+                android:text="@string/genre"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/locationEditText" />
+
+            <RadioGroup
+                android:id="@+id/genreRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginEnd="@dimen/margin_size"
+                android:layout_marginRight="@dimen/margin_size"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genreTextView">
+
+                <RadioButton
+                    android:id="@+id/rockRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/rock" />
+
+                <RadioButton
+                    android:id="@+id/popRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pop" />
+
+                <RadioButton
+                    android:id="@+id/symphonicRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/symphonic" />
+
+                <RadioButton
+                    android:id="@+id/maneleRadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/manele" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/priceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:text="@string/price"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/genreRadioGroup" />
+
+            <SeekBar
+                android:id="@+id/priceSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:max="1000"
+                android:thumbTint="@color/mine_one"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceTextView" />
+
+            <ProgressBar
+                android:id="@+id/priceProgressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/seagreen"
+                android:maxHeight="@dimen/progress_bar_size"
+                android:minHeight="@dimen/progress_bar_size"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toTopOf="@+id/priceSeekBar"
+                app:layout_constraintStart_toEndOf="@+id/priceValueTextView"
+                app:layout_constraintTop_toBottomOf="@+id/genreRadioGroup" />
+
+            <TextView
+                android:id="@+id/priceValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:text="@string/_0_ron"
+                android:textColor="@color/seagreen"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/priceSeekBar"
+                app:layout_constraintStart_toEndOf="@+id/priceTextView"
+                app:layout_constraintTop_toBottomOf="@+id/genreRadioGroup" />
+
+            <TextView
+                android:id="@+id/dateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:text="@string/date"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/priceSeekBar" />
+
+            <TextView
+                android:id="@+id/dateEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:ems="7"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size"
+                android:hint="@string/date_hint"
+                android:padding="@dimen/date_padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateTextView" />
+
+            <TextView
+                android:id="@+id/ratingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:text="@string/rating"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/dateEditText" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginTop="@dimen/margin_size"
+                android:numStars="5"
+                android:progressTint="@color/gold"
+                android:stepSize="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ratingTextView" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_size"
+                android:layout_marginLeft="@dimen/margin_size"
+                android:layout_marginStart="@dimen/margin_size"
+                android:layout_marginRight="@dimen/margin_size"
+                android:layout_marginEnd="@dimen/margin_size"
+                android:layout_marginBottom="@dimen/margin_size"
+                android:background="@color/steelblue"
+                android:text="@string/save"
+                android:onClick="saveConcertOnClick"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_margin="@dimen/margin_size"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@+id/ratingBar">
+
+                <Button
+                    android:id="@+id/selectImageButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/margin_size"
+                    android:background="@drawable/galery_photo"
+                    android:text="@string/select_image_from_galery"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_text_size"
+                    android:onClick="selectFromGalleryOnClick"
+                    android:layout_marginEnd="@dimen/margin_size"
+                    />
+
+                <Button
+                    android:id="@+id/makePhotoButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_size"
+                    android:background="@drawable/make_photo"
+                    android:text="@string/make_a_photo_now"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_text_size"
+                    android:onClick="makePhotoOnClick"
+                    android:layout_marginStart="@dimen/margin_size" />
+            </LinearLayout>
+
+        <ImageView
+            android:id="@+id/previewImageView"
+            android:layout_width="@dimen/preview_pic_width"
+            android:layout_height="@dimen/preview_pic_height"
+            android:layout_marginStart="@dimen/margin_size"
+            android:layout_marginLeft="@dimen/margin_size"
+            android:layout_marginTop="@dimen/margin_size"
+            android:layout_marginEnd="@dimen/margin_size"
+            android:layout_marginRight="@dimen/margin_size"
+            android:layout_marginBottom="@dimen/margin_size"
+            android:longClickable="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toTopOf="@+id/ratingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/dateEditText"
+            app:layout_constraintTop_toBottomOf="@+id/priceSeekBar"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+
+</ScrollView>

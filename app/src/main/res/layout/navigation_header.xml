@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_size"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/navigation_header_background"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_size"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:elevation="12dp"
+        android:id="@+id/account_card_view"
+        app:cardCornerRadius="40dp"
+        android:layout_centerHorizontal="true">
+        <ImageView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/account_image"
+            android:scaleType="centerCrop"/>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:text="@string/soare_ion_alexandru"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        app:fontFamily="@font/lemon"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"/>
+
+    <TextView
+        android:id="@+id/account_gmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="@string/soalexandrion1997_gmail_com"
+        android:textSize="@dimen/small_text_size"
+        app:fontFamily="@font/lemon"
+        android:shadowColor="#000000"
+        android:shadowDx="1.5"
+        android:shadowDy="1.3"
+        android:shadowRadius="1.6"/>
+
+</LinearLayout>
