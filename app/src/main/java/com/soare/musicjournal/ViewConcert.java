@@ -96,7 +96,7 @@ public class ViewConcert extends AppCompatActivity implements View.OnClickListen
 
                 finish();
             } else
-                Toast.makeText(ViewConcert.this, deleteRandom + " out of 10. Lukcy!",
+                Toast.makeText(ViewConcert.this, deleteRandom + " out of 10. Lucky!",
                         Toast.LENGTH_LONG).show();
         }
 
