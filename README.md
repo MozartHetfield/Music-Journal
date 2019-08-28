@@ -17,3 +17,5 @@ The main priciples and functionalities that were approached are:
 
 Special thanks to our teacher, Magda Miu, who has an unconditionally love to help people understand better Android.
 The apk can be downloaded from the following link: https://www.dropbox.com/s/ew04x9jeslvc9sx/music-journal.apk?dl=0
+
+Note: The background from the recycler view and from the concert management (the paper folding one) is too big and causes a bit of delay when switching or editing these activities.
